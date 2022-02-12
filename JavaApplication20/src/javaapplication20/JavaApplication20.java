@@ -9,7 +9,7 @@ public class JavaApplication20 {
     
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        /*
+        
         *int n1,n2, s;
         *System.out.println("ingrese un numeros: ");
         *n1 = entrada.nextInt();
@@ -732,7 +732,7 @@ public class JavaApplication20 {
         System.out.println(cadena.toUpperCase());
         System.out.println(cadena.toLowerCase());
         System.out.println(cadena.charAt(4));
-        */
+        
         
         int n1,n2,op_suma,op_resta,op_multiplicacion;
         float op_division;
