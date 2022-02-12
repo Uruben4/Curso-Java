@@ -696,7 +696,7 @@ public class JavaApplication20 {
             }
             System.out.println(" ");
         }
-        */
+        
         int fil = 4;
         int col = 5;
                 
@@ -717,6 +717,63 @@ public class JavaApplication20 {
             System.out.println(" ");
         }
         
+        String cadena1 = "curso de ";
+        String cadena2 = "java";
+        cadena1 = cadena1 + cadena2;
+        System.out.println(cadena1);
+        System.out.println(cadena2.leght());
+        
+        String cadena = "programacion";
+        String cadena2 = "programacion";
+        System.out.println(cadena.equals(cadena2));
+        System.out.println(cadena.equalsIgnoreCase(cadena2));   
+        
+        String cadena = "ProGrAmaciOn";
+        System.out.println(cadena.toUpperCase());
+        System.out.println(cadena.toLowerCase());
+        System.out.println(cadena.charAt(4));
+        */
+        
+        int n1,n2,op_suma,op_resta,op_multiplicacion;
+        float op_division;
+        
+        System.out.println("ingrese un numero: ");
+        n1 = entrada.nextInt();
+        System.out.println("ingrese otro numero: ");
+        n2 = entrada.nextInt();
+        
+        op_suma = suma(n1,n2);
+        op_resta = resta(n1,n2);
+        op_multiplicacion = multiplicacion(n1,n2);
+        op_division = division(n1,n2);
+        resultado(op_suma,op_resta,op_multiplicacion,op_division);    
     }
-    
+    public static int suma(int n1,int n2){
+        int suma;
+        suma = n1 + n2;
+        return suma;
+    }
+    public static int resta(int n1,int n2){
+        int resta;
+        resta = n1 - n2;
+        return resta;
+    }
+    public static int multiplicacion(int n1,int n2){
+        int multiplicacion;
+        multiplicacion = n1 * n2;
+        return multiplicacion;
+    }
+    public static float division(int n1,int n2){
+        float division;
+        division= n1 / n2;
+        return division;
+    }
+    public static void resultado(int s,int r,int m,float d){
+        System.out.println("respuesta: ");
+        System.out.println(" ");
+        System.out.println("suma: "+s);
+        System.out.println("resta: "+r);
+        System.out.println("multiplicacion: "+m);
+        System.out.println("division: "+d);
+    }
 }
